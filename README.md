@@ -51,8 +51,13 @@ will look something like:
       Then the output should contain "Client-initiated Renegotiations: Rejected"
       And the output should contain "Secure Renegotiation: Supported"
 
+Here is a very short [video on asciinema](http://asciinema.org/a/6565)
+of some of the tests in action.
+
 As for what all the tests are doing, I'd recommend reading the test
 output or the features in the `features` directory.
+
+
 
 
 ## Advanced usage
