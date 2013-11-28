@@ -14,7 +14,7 @@ Feature: SSL
   Scenario: Check certificate is trusted
     When we check the certificate
     Then the output should contain "Certificate is Trusted"
-    And the output should contain "OK - Common Name Matches"
+    And the output should match /OK - (Common|Subject Alternative) Name Matches/
     And the output should not contain "Signature Algorithm:               md5"
     And the output should not contain "Signature Algorithm:               md2"
     And the output should contain "Key Size:                          2048"
