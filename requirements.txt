@@ -1,0 +1,1 @@
+https://github.com/iSECPartners/sslyze/archive/release-0.6.tar.gz
