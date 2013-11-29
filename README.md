@@ -9,16 +9,16 @@ Or
 
 ## Purpose
 
-This test suite contains a collection of very opinionated security
-related tests, intended for general usage against most types of
-web application. You can run the tests out-of-the-box or use them as
+This test suite contains a collection of very opinionated
+security-related tests, intended for general usage against most types
+of web application. You can run the tests out-of-the-box or use them as
 a starting point for more domain specific tests.
 
 Currently the tests cover:
 
-* Security minded HTTP headers
-* Checking for open ports
-* Issues with SSL configuration
+* security-minded HTTP headers
+* checking for open ports
+* issues with SSL configuration
 
 
 ## Installation
@@ -79,13 +79,13 @@ Which should return something like:
 ## Opinions?
 
 As noted above this specific test suite is pretty opinionated. I'm
-interested in two things:
+interested in:
 
-* Pull requests to challenge those opinions. It would be nice if as a
-  broad community we could aggree on some best practices.
-* Identiying areas where more flexibility is a good thing. At the moment
+* pull requests to challenge those opinions – it would be nice if as a
+  broad community we could aggree on some best practices
+* identifying areas where more flexibility is a good thing – at the moment
   that means maintaining your own fork but if areas like that emerge
-  I'll look at baking in more options based on usage.
+  I'll look at baking in more options based on usage
 
 
 ## Thanks
@@ -95,7 +95,7 @@ Thanks to [nabla-c0d3](https://github.com/nabla-c0d3) for
 work for the SSL tests.
 
 Thanks also to the folks behind [Gauntlt](http://gauntlt.org/). I've
-borrewed some of the ideas but found myself wanting to start smaller.
+borrowed some of the ideas but found myself wanting to start smaller.
 This project is all about strong options, whereas Gauntlt takes much
 more of an integrated framework approach. If you've not used Gauntlt
-aleady you should check it out.
+already you should check it out.
