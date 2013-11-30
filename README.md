@@ -82,7 +82,7 @@ As noted above this specific test suite is pretty opinionated. I'm
 interested in:
 
 * pull requests to challenge those opinions – it would be nice if as a
-  broad community we could aggree on some best practices
+  broad community we could agree on some best practices
 * identifying areas where more flexibility is a good thing – at the moment
   that means maintaining your own fork but if areas like that emerge
   I'll look at baking in more options based on usage
