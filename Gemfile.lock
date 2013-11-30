@@ -22,13 +22,21 @@ GEM
     debugger-linecache (1.2.0)
     debugger-ruby_core_source (1.2.4)
     diff-lcs (1.2.5)
-    ffi (1.9.0)
+    ffi (1.9.3)
     gherkin (2.12.2)
       multi_json (~> 1.3)
-    mime-types (1.25)
+    mime-types (2.0)
+    mini_portile (0.5.2)
     multi_json (1.8.2)
     multi_test (0.0.2)
-    nokogiri (1.5.10)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
+    prodder-steps (0.0.1)
+      aruba
+      cucumber
+      rest-client
+      rspec
+      ruby-nmap
     rake (10.1.0)
     rest-client (1.6.7)
       mime-types (>= 1.16)
@@ -37,10 +45,10 @@ GEM
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
       rspec-mocks (~> 2.14.0)
-    rspec-core (2.14.5)
-    rspec-expectations (2.14.3)
+    rspec-core (2.14.7)
+    rspec-expectations (2.14.4)
       diff-lcs (>= 1.1.3, < 2.0)
-    rspec-mocks (2.14.3)
+    rspec-mocks (2.14.4)
     ruby-nmap (0.6.0)
       nokogiri (~> 1.3)
       rprogram (~> 0.3)
@@ -49,10 +57,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aruba
-  cucumber
   debugger
+  prodder-steps
   rake
-  rest-client
-  rspec
-  ruby-nmap

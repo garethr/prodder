@@ -58,8 +58,6 @@ As for what all the tests are doing, I'd recommend reading the test
 output or the features in the `features` directory.
 
 
-
-
 ## Advanced usage
 
 If you only want to run part of the test suite you can, either by using
@@ -76,16 +74,27 @@ Which should return something like:
     rake prod:ssl      # Only run the ssl probes
 
 
+## Reuse
+
+The steps used as part of this test suite are now part of a gem, called
+[prodder-steps](https://github.com/garethr/prodder-steps).
+
+In order to use these in your own cucumber features you can simply
+include the following in `features/support/env.rb` or similar:
+
+    require 'prodder-steps/cucumber'
+
+In order to use this you'll first need to include prodder-steps in your
+Gemfile:
+
+    gem "prodder-steps"
+
+
 ## Opinions?
 
 As noted above this specific test suite is pretty opinionated. I'm
-interested in:
-
-* pull requests to challenge those opinions – it would be nice if as a
-  broad community we could agree on some best practices
-* identifying areas where more flexibility is a good thing – at the moment
-  that means maintaining your own fork but if areas like that emerge
-  I'll look at baking in more options based on usage
+interested in pull requests to challenge those opinions – it would
+be nice if as a broad community we could agree on some best practices.
 
 
 ## Thanks
