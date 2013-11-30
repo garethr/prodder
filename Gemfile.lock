@@ -31,7 +31,7 @@ GEM
     multi_test (0.0.2)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
-    prodder-steps (0.0.1)
+    prodder-steps (0.0.2)
       aruba
       cucumber
       rest-client
@@ -58,5 +58,5 @@ PLATFORMS
 
 DEPENDENCIES
   debugger
-  prodder-steps
+  prodder-steps (~> 0.0.2)
   rake

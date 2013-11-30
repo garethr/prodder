@@ -18,8 +18,8 @@ Feature: Secure HTTP headers
     And the "X-Content-Type-Options" header should be set to "nosniff"
 
   Scenario: Cookies should be secure
-    Then the "Set-Cookie" header should have the "httponly" attribute
-    And the "Set-Cookie" header should have the "secure" attribute
+    Then if present, the "Set-Cookie" header should have the "httponly" attribute
+    And if present, the "Set-Cookie" header should have the "secure" attribute
 
   Scenario: Strict Transport security should be anabled
     Then the "Strict-Transport-Security" header should be set to "max-age=16070400; includeSubDomain"
