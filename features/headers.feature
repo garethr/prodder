@@ -21,7 +21,7 @@ Feature: Secure HTTP headers
     Then if present, the "Set-Cookie" header should have the "httponly" attribute
     And if present, the "Set-Cookie" header should have the "secure" attribute
 
-  Scenario: Strict Transport security should be anabled
+  Scenario: Strict Transport security should be enabled
     Then the "Strict-Transport-Security" header should be set to "max-age=16070400; includeSubDomain"
 
   Scenario: A content security policy should be in place
